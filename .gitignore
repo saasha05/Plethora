@@ -1,5 +1,5 @@
 *.env
-media-ranking-api/node_modules
-media-ranking-frontend/node_modules
-media-ranking-api/package-lock.json
-media-ranking-frontend/package-lock.json
+server/node_modules
+client/node_modules
+server/package-lock.json
+client/package-lock.json

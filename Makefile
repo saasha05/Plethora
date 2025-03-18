@@ -3,26 +3,26 @@
 .PHONY: all api frontend clean
 
 create-cluster:
-	./media-ranking-api/tools/create_cluster.sh
+	./server/tools/create_cluster.sh
 
 all-deps: api-deps frontend-deps
 
 api-deps:
-	cd media-ranking-api && npm install
+	cd server && npm install
 
 frontend-deps:
-	cd media-ranking-frontend && npm install
+	cd client && npm install
 
 clean-deps:
-	rm -rf media-ranking-api/node_modules media-ranking-frontend/node_modules
+	rm -rf server/node_modules client/node_modules
 
 all-start: api-start frontend-start
 
 api-start:
-	cd media-ranking-api && npm run dev &
+	cd server && npm run dev &
 
 frontend-start:
-	cd media-ranking-frontend && npm start &
+	cd client && npm start &
 
 stop-all:
 	pkill -f "npm run dev" || true

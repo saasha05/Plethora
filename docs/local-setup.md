@@ -22,7 +22,10 @@ make all-deps
 2. Download MongoDB and create a cluster
 Create a `local.env` file wih the cluster URL
 
-3. Run frontend and backend
+3. Go to [Watchmode API](https://api.watchmode.com/) and sign up for an account
+Add the API key to your `.env` file in the backend project
+
+4. Run frontend and backend
 ```shell
 make all-start
 ```
