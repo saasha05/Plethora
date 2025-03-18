@@ -24,7 +24,7 @@ app.use(cors());
 
 // MongoDB connection
 //TODO fix this
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://Cluster84778:testdb@plethoradb.8zq1n.mongodb.net/?retryWrites=true&w=majority&appName=PlethoraDb";
+const MONGODB_URI = process.env.MONGODB_URI
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Media = require('../models/media'); // Assuming you've moved models to separate files
 
 // Replace with your actual Watchmode API key
-const WATCHMODE_API_KEY = process.env.WATCHMODE_API_KEY || "JFLk5Rdj5yMWBA9H6RRAx92EjDUhd7PM4xKNMNV3";
+const WATCHMODE_API_KEY = process.env.WATCHMODE_API_KEY
 const BASE_URL = 'https://api.watchmode.com/v1';
 
 // Map Watchmode source IDs to platform names in our system
