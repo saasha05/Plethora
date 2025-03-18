@@ -1,15 +1,3 @@
-# Media Ranking System
-
-A pairwise comparison system for ranking movies and TV shows across different streaming platforms.
-
-## Features
-
-- **Pairwise Ranking**: Build your personal media rankings through simple A/B comparisons
-- **Category-Based Rankings**: View your rankings by genre, platform, language, and more
-- **Subscription Optimization**: Get personalized recommendations for which streaming services best match your preferences
-- **Media Search**: Easily add content you've watched to your rankings
-- **Platform Tracking**: Track which platforms you used to watch each show or movie
-
 ## Technical Overview
 
 This project consists of two main parts:
@@ -26,57 +14,18 @@ This project consists of two main parts:
 - Watchmode API Key (for fetching media data)
 
 ### Installation
-
-#### Backend Setup
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/media-ranking-system.git
-cd media-ranking-system
+1. Download all dependencies
+```shell
+make all-deps
 ```
 
-2. Install backend dependencies:
-```bash
-cd backend
-npm install
-```
+2. Download MongoDB and create a cluster
+Create a `local.env` file wih the cluster URL
 
-3. Create a `.env` file in the backend directory:
+3. Run frontend and backend
+```shell
+make all-start
 ```
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/media-ranking
-JWT_SECRET=your_jwt_secret_key
-WATCHMODE_API_KEY=your_watchmode_api_key
-```
-
-4. Start the backend server:
-```bash
-npm start
-```
-
-#### Frontend Setup
-
-1. Navigate to the frontend directory:
-```bash
-cd ../media-ranking-frontend
-```
-
-2. Install frontend dependencies:
-```bash
-npm install
-```
-
-3. Create a `.env` file in the frontend directory:
-```
-REACT_APP_API_URL=http://localhost:3000/api
-```
-
-4. Start the frontend development server:
-```bash
-npm start
-```
-
-5. Open your browser and navigate to `http://localhost:3000`
 
 ## API Endpoints
 
